@@ -167,28 +167,28 @@ const page = () => {
             <BsCupHot className="object-contain w-6 aspect-square text-[#ff9f0d]" />
             <h2 className="mt-2 text-5xl font-bold leading-none text-zinc-800 max-md:text-4xl">Main Course</h2>
             <div className="flex flex-wrap gap-5 justify-between self-stretch mt-6 text-2xl font-bold leading-none max-md:max-w-full">
-              <div className="text-zinc-800" aria-level="3">Optic Big Breakfast Combo Menu</div>
+              <div className="text-zinc-800" >Optic Big Breakfast Combo Menu</div>
               <div className="text-amber-500" aria-label="Price: 32 dollars">32$</div>
             </div>
             <div className="mt-2 text-neutral-600">Toasted French bread topped with romano, cheddar</div>
             <div className="mt-2 text-zinc-500" aria-label="560 calories">560 CAL</div>
             <div className="shrink-0 self-stretch mt-4 h-px border border-dashed bg-neutral-200 border-neutral-200 max-md:max-w-full" ></div>
             <div className="flex flex-wrap gap-5 justify-between self-stretch mt-6 text-2xl font-bold leading-none max-md:max-w-full">
-              <div className="text-zinc-800" aria-level="3">Cashew Chicken With Stir-Fry</div>
+              <div className="text-zinc-800" >Cashew Chicken With Stir-Fry</div>
               <div className="text-amber-500" aria-label="Price: 43 dollars">43$</div>
             </div>
             <div className="mt-2 text-neutral-600">Gorgonzola, ricotta, mozzarella, taleggio</div>
             <div className="mt-2 text-zinc-500" aria-label="700 calories">700 CAL</div>
             <div className="shrink-0 self-stretch mt-4 h-px border border-dashed bg-neutral-200 border-neutral-200 max-md:max-w-full"></div>
             <div className="flex flex-wrap gap-5 justify-between self-stretch mt-6 text-2xl font-bold leading-none max-md:max-w-full">
-              <div className="text-zinc-800" aria-level="3">Vegetables & Green Salad</div>
+              <div className="text-zinc-800" >Vegetables & Green Salad</div>
               <div className="text-amber-500" aria-label="Price: 14 dollars">14$</div>
             </div>
             <div className="mt-2 text-neutral-600">Ground cumin, avocados, peeled and cubed</div>
             <div className="mt-2 text-zinc-500" aria-label="1000 calories">1000 CAL</div>
             <div className="shrink-0 self-stretch mt-4 h-px border border-dashed bg-neutral-200 border-neutral-200 max-md:max-w-full"></div>
             <div className="flex flex-wrap gap-5 justify-between self-stretch mt-6 text-2xl font-bold leading-none max-md:max-w-full">
-              <div className="text-zinc-800" aria-level="3">Spicy Vegan Potato Curry</div>
+              <div className="text-zinc-800" >Spicy Vegan Potato Curry</div>
               <div className="text-amber-500" aria-label="Price: 35 dollars">35$</div>
             </div>
             <div className="mt-2 text-neutral-600">Spreadable cream cheese, crumbled blue cheese</div>
@@ -453,7 +453,7 @@ const page = () => {
           className="flex flex-wrap gap-5 justify-between mt-6 text-2xl font-bold leading-none max-md:max-w-full"
           
         >
-          <h3 className="text-zinc-800" tabindex="0">Tormentoso BushTea Pintoage</h3>
+          <h3 className="text-zinc-800">Tormentoso BushTea Pintoage</h3>
           <div className="text-amber-500" aria-label="Price">35$</div>
         </div>
         <p className="self-start mt-2 text-base text-neutral-600">
