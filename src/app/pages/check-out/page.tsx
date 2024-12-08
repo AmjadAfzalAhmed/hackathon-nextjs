@@ -22,7 +22,9 @@ const page = () => {
             <Link href="/" className="grow font-bold text-amber-500" aria-current="page">Home</Link>
             <Link href="/menu">Menu</Link>
             <Link href="/blog">Blog</Link>
-            <Link href="/check-out">Chekcout</Link>
+            <Link href="/pages/check-out">Chekcout</Link>
+            <Link href="/pages/faq">FAQ</Link>
+            <Link href="/pages/error">Error</Link>
             <Link href="/about">About</Link>
             <Link href="/shop">Shop</Link>
             <Link href="/contact">Contact</Link>

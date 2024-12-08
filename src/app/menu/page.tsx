@@ -38,9 +38,9 @@ const page = () => {
             <Link href="/" className="grow font-bold text-amber-500" aria-current="page">Home</Link>
             <Link href="/menu">Menu</Link>
             <Link href="/blog">Blog</Link>
-            <Link href="/check-out">Checkout</Link>
+            <Link href="/pages">Pages</Link>
             <Link href="/about">About</Link>
-            {/* <Link href="/shop">Shop</Link> */}
+            <Link href="/shop">Shop</Link>
             <Link href="/contact">Contact</Link>
           </nav>
           <div className="flex gap-4 self-stretch my-auto" aria-label="Social media links">
