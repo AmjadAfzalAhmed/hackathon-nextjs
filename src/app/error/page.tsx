@@ -42,12 +42,12 @@ const page = () => {
                     alt="Decorative banner image"
                 />
                 <div className='w-[225px] h-[104px] z-100'>
-                    <h1 className='text-white text-5xl font-bold absolute top-[198px] left-[850px] leading-14'>Our Menu</h1>
+                    <h1 className='text-white text-5xl font-bold absolute top-[198px] left-[850px] leading-14'>404 Error</h1>
 
                     <div className='w-[133px] h-7 flex items-center absolute top-[274px] left-[897px]'>
                         <Link href='/' className='text-white text-[20px] leading-7'>Home</Link>
                         <ChevronRight className='w-4 h-4 text-white' />
-                        <Link href='menu' className='text-[#ff9f0d] text-[20px] font-normal leading-7'>Menu</Link>
+                        <Link href='menu' className='text-[#ff9f0d] text-[20px] font-normal leading-7'>404</Link>
                     </div>
 
                 </div>
