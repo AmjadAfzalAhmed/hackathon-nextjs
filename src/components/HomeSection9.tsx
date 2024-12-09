@@ -2,7 +2,7 @@ import Image from 'next/image'
 import img1 from '/public/images/img1.png'
 import img2 from '/public/images/img2.png'
 import img3 from '/public/images/img3.png'
-import icon from '/public/images/icon.png'
+import icon from '/public/images/Icon.png'
 
 function HomeSection9() {
     return (
