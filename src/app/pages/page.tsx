@@ -6,15 +6,15 @@ import bgPic from '/public/images/menutop.png'
 function page() {
   return (
     <div>
-       <nav className="max-w-[508px] h-6 flex flex-wrap absolute top-2 left-[451px] gap-8 self-stretch text-base text-white max-md:max-w-full" aria-label="Main navigation">
-            <Link href="/" className="grow font-bold text-amber-500" aria-current="page">Home</Link>
-            <Link href="/pages/check-out">Checkout</Link>
-            <Link href="/pages/faq">FAQ</Link>
-            <Link href="/pages/error">404</Link>
-            
-          </nav>
+      <nav className="max-w-[508px] h-6 flex flex-wrap absolute top-2 left-[451px] gap-8 self-stretch text-base text-white max-md:max-w-full" aria-label="Main navigation">
+        <Link href="/" className="grow font-bold text-amber-500" aria-current="page">Home</Link>
+        <Link href="/pages/check-out">Checkout</Link>
+        <Link href="/pages/faq">FAQ</Link>
+        <Link href="/pages/error">404</Link>
 
-          <div className="w-[1920px] h-[410px]">
+      </nav>
+
+      <div className="w-[1920px] h-[410px]">
         <Image
           src={bgPic}
           className="object-contain w-full aspect-[4.67] -z-10"
@@ -30,6 +30,7 @@ function page() {
           </div>
 
         </div>
+
 
       </div>
     </div>

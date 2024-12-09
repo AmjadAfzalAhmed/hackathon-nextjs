@@ -75,7 +75,7 @@ const page = () => {
       {/* Starter Menu */}
 
 
-      <div className="w-[1320px] h-[628px] absolute top-[531px] left-[300px] flex gap-5 max-md:flex-col">
+      <div className="w-[1320px] h-[628px] absolute top-[541px] left-[300px] flex gap-5 max-md:flex-col">
         <div className="flex flex-col w-[37%] max-md:ml-0 max-md:w-full">
           <Image
             src={starterMenu}
@@ -161,7 +161,7 @@ const page = () => {
       {/* Main Course */}
 
 
-      <div className="w-[1320px] h-[628px] absolute top-[1279px] left-[300px] flex gap-5 max-md:flex-col">
+      <div className="w-[1320px] h-[628px] absolute top-[1289px] left-[300px] flex gap-5 max-md:flex-col">
         <div className="flex flex-col w-[63%] max-md:ml-0 max-md:w-full">
           <div className="flex flex-col items-start w-full text-base max-md:mt-10 max-md:max-w-full">
             <BsCupHot className="object-contain w-6 aspect-square text-[#ff9f0d]" />
@@ -205,7 +205,7 @@ const page = () => {
 
       {/* Clients & Customers */}
 
-      <div className="w-[1920px] h-[468px] absolute top-[2027px] flex flex-col">
+      <div className="w-[1920px] h-[468px] absolute top-[2037px] flex flex-col">
         <div className=" min-h-[255px] flex relative flex-col  max-md:max-w-full">
           <Image
             src={bgPic}
@@ -287,7 +287,7 @@ const page = () => {
       {/* Dessert */}
 
 
-      <div className="w-[1320px] h-[628px] absolute top-[2615px] left-[300px] flex gap-5 max-md:flex-col">
+      <div className="w-[1320px] h-[628px] absolute top-[2625px] left-[300px] flex gap-5 max-md:flex-col">
         <div className="flex flex-col w-[37%] max-md:ml-0 max-md:w-full">
           <Image
             src={dessert}

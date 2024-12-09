@@ -20,7 +20,7 @@ function Footer() {
           </div>
           <div className="flex flex-col self-start text-base max-md:max-w-full">
             <form className="flex gap-5 justify-between pl-5 bg-amber-500 rounded fill-amber-500 max-md:max-w-full">
-              <label for="emailSubscribe" className="sr-only">Enter Your Email</label>
+              
               <input
                 type="email"
                 id="emailSubscribe"

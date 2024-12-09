@@ -17,12 +17,12 @@ function Hero() {
     <div className="flex relative flex-col items-center pb-20 w-[1920px] min-h-[950px] max-md:px-5 max-md:pt-24 max-md:max-w-full">
       <Image src={backG} alt="Background" className="object-cover absolute inset-0 size-full opacity-10" />
       {/* Navbar */}
-      <nav className="w-[1320px] h-[87px] relative left-[300px] top-[45px] flex flex-col" >
+      <div className="w-[1320px] h-[78px] absolute top-6 flex flex-col">
         <div className="self-center text-2xl font-bold leading-none text-white">
           <span className="text-amber-500">Food</span>
           <span className="text-white">tuck</span>
         </div>
-        <div className="flex flex-wrap gap-5 justify-between w-full text-base text-white max-md:max-w-full">
+        <nav aria-label="Main navigation" className="flex flex-wrap gap-5 justify-between w-full text-base text-white max-md:max-w-full">
           <div className="flex gap-5 my-auto max-md:max-w-full">
             <div className="flex gap-8 whitespace-nowrap">
               <Link href="/" className="hover:text-amber-500 focus:outline-none focus:ring-2 focus:ring-amber-500">Home</Link>
@@ -32,7 +32,7 @@ function Hero() {
             </div>
             <div className="flex gap-px">
               <Link href="/about" className="grow hover:text-amber-500 focus:outline-none focus:ring-2 focus:ring-amber-500">About</Link>
-              <ChevronDown className="object-contain shrink-0 my-auto w-3 aspect-square" />
+              <ChevronDown className="object-contain shrink-0 my-auto w-4 h-4 aspect-square" />
             </div>
             <div className="flex gap-8">
               <Link href="/shop" className="hover:text-amber-500 focus:outline-none focus:ring-2 focus:ring-amber-500">Shop</Link>
@@ -40,22 +40,22 @@ function Hero() {
             </div>
           </div>
           <div className="flex gap-2 whitespace-nowrap">
-            <form className="absolute top-[33px] left-[978px] flex flex-auto gap-10 px-7 py-4 rounded-3xl border border-amber-500 border-solid max-md:px-5" >
-              <label for="search-input" className="sr-only">Search</label>
+            <form role="search" className="flex flex-auto gap-10 px-7 py-4 rounded-3xl border border-amber-500 border-solid max-md:px-5">
+              <label className="sr-only">Search</label>
               <input type="search" id="search-input" placeholder="Search..." className="bg-transparent text-white placeholder-white focus:outline-none" />
               <button type="submit" aria-label="Search">
                 <Search className="object-contain shrink-0 w-6 aspect-square" />
               </button>
             </form>
-            <button aria-label="handbag" className="focus:outline-none focus:ring-2 focus:ring-amber-500">
-              <PiHandbag className="object-contain shrink-0 my-auto w-6 aspect-square" />
+            <button aria-label="Shopping cart" className="focus:outline-none focus:ring-2 focus:ring-amber-500">
+              <PiHandbag className="object-contain shrink-0 my-auto w-6 h-6 aspect-square" />
             </button>
           </div>
-        </div>
-      </nav>
+        </nav>
+      </div>
 
 
-      
+
       {/* Mid Section */}
       <div className="midSec flex  ">
 
@@ -86,16 +86,44 @@ function Hero() {
 
         {/* Center Section: Heading and Content */}
 
-        <div className="content w-[472px] h-[356px] absolute top-[293px] left-[300px] flex flex-col">
-          <p className='text-[#ff9f0d] font-normal text-[32px] leading-10'>Its Quick & amusing</p>
-          <button className="px-14 py-5 mt-8 bg-amber-500 rounded-[30px] text-neutral-200 max-md:px-5 hover:bg-amber-600 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:ring-offset-2">
+        <div
+          className="absolute top-[293px] left-[300px] flex flex-col items-start text-base text-white max-w-[472px] rounded-[30px]"
+          aria-label="Quick and Amusing Section"
+        >
+          <div
+            className="text-3xl leading-none text-amber-500"
+
+          >
+            Its Quick & Amusing!
+          </div>
+          <div
+            className="self-stretch mt-2 w-full text-6xl font-bold leading-[68px]">
+
+            <span className="text-amber-500">Th</span>
+            e Art of speed
+            <br />
+            food Quality
+          </div>
+          <div
+            className="mt-8 leading-6"
+
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            <br />
+            Varius sed pharetra dictum neque massa congue
+          </div>
+          <a
+            href="#menu"
+            className="px-14 py-5 mt-8 bg-amber-500 rounded-[30px] text-neutral-200 hover:bg-amber-600 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:ring-offset-2"
+
+          >
             See Menu
-          </button>
+          </a>
         </div>
 
 
         {/* Right Section: Featured Dish Image */}
-        <div className="absolute flex w-[877.8px] h-[670px] top-[198px] left-[939px] border-[2px] border-[#ffffff]">
+        <div className="absolute flex w-[877.8px] h-[670px] top-[198px] left-[939px]">
           <Image
             src={heroImg}
             alt="Featured dish presentation"
@@ -117,16 +145,16 @@ function Hero() {
             fringilla bibendum. Urna, elit augue urna, vitae feugiat pretium donec id elementum. Ultrices mattis sed vitae
             mus risus. Lacus nisi, et ac dapibus sit eu velit in consequat.</p>
 
-            <div className="div flex items-center">
+          <div className="div flex items-center">
             <TiTick className='w-[17px] h-[12.24px]' /><p>Lacus nisi, et ac dapibus sit eu velit in consequat.</p>
-            </div>
-            <div className="div flex items-center">
+          </div>
+          <div className="div flex items-center">
             <TiTick className='w-[17px] h-[12.24px]' /><p> Quisque diam pellentesque bibendum non dui volutpat fringilla </p>
-            </div>
-            <div className="div flex items-center">
+          </div>
+          <div className="div flex items-center">
             <TiTick className='w-[17px] h-[12.24px]' /><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-            <button className='w-[190px] h-[60px] bg-[#ff9f0d] text-white text-[16px] leading-6 rounded-[30px] mt-8'>Read More</button>
+          </div>
+          <button className='w-[190px] h-[60px] bg-[#ff9f0d] text-white text-[16px] leading-6 rounded-[30px] mt-8'>Read More</button>
         </div>
         <div className="right images flex flex-col gap-3">
           <Image src={pic2} alt='about-pic1' width={660} height={330} className='rounded-[6px]' />
@@ -138,7 +166,7 @@ function Hero() {
       </div>
 
 
-    
+
     </div>
 
   )

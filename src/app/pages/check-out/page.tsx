@@ -1,10 +1,21 @@
 import Image from 'next/image'
 import tikka from '/public/images/tikka.png'
 import { FaArrowRight } from 'react-icons/fa'
-import { ChevronLeft, ChevronRight, Link, Search, UserRound } from 'lucide-react'
+import { ChevronDown, ChevronLeft, ChevronRight, Link, Search, UserRound } from 'lucide-react'
 import { PiHandbag } from 'react-icons/pi'
 import bgPic from '/public/images/menutop.png'
 import Footer from '@/components/Footer'
+import { Input } from '@/components/ui/input'
+import {
+  Select,
+  // SelectContent,
+  // SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select"
+
+
+
 
 const page = () => {
   return (
@@ -21,13 +32,10 @@ const page = () => {
           <nav className="max-w-[508px] h-6 flex flex-wrap absolute top-2 left-[451px] gap-8 self-stretch text-base text-white max-md:max-w-full" aria-label="Main navigation">
             <Link href="/" className="grow font-bold text-amber-500" aria-current="page">Home</Link>
             <Link href="/menu">Menu</Link>
-            <Link href="/blog">Blog</Link>
             <Link href="/pages/check-out">Chekcout</Link>
             <Link href="/pages/faq">FAQ</Link>
             <Link href="/pages/error">Error</Link>
-            <Link href="/about">About</Link>
-            <Link href="/shop">Shop</Link>
-            <Link href="/contact">Contact</Link>
+            
           </nav>
           <div className="flex gap-4 self-stretch my-auto" aria-label="Social media links">
             <Search className=" absolute left-[1216px] top-2 shrink-0 w-6 h-6 aspect-square text-[#ffffff]" />
@@ -59,7 +67,7 @@ const page = () => {
 
       {/* Mid Section */}
 
-      <div className="w-[1320px] h-[723px] absolute top-[530px] left-[300px]">
+      <div className="w-[1320px] h-[723px] absolute top-[550px] left-[300px]">
         <div className="flex gap-5 max-md:flex-col">
           <div className="flex flex-col w-[872px] h-[723px] max-md:ml-0 max-md:w-full">
             <form className="flex flex-col w-full text-base max-md:mt-6 max-md:max-w-full">
@@ -68,64 +76,70 @@ const page = () => {
               </h2>
               <div className="flex flex-wrap gap-6 mt-6 text-zinc-800 max-md:max-w-full">
                 <div className="flex flex-col flex-1 grow shrink-0 basis-0 w-fit max-md:max-w-full">
-                  <label for="firstName" className="self-start">First name</label>
-                  <input type="text" id="firstName" name="firstName" className="flex shrink-0 mt-2 h-14 border border-solid border-neutral-200 max-md:max-w-full px-4" required aria-required="true" />
+                  <p>First name</p>
+                  <Input type="text" id="firstName" name="firstName" className="flex shrink-0 mt-2 h-14 border border-solid border-neutral-200 max-md:max-w-full px-4" required aria-required="true" />
                 </div>
                 <div className="flex flex-col flex-1 grow shrink-0 basis-0 w-fit max-md:max-w-full">
-                  <label for="lastName" className="self-start">Last name</label>
-                  <input type="text" id="lastName" name="lastName" className="flex shrink-0 mt-2 h-14 border border-solid border-neutral-200 max-md:max-w-full px-4" required aria-required="true" />
+                  <p>Last name</p>
+                  <Input type="text" id="lastName" name="lastName" className="flex shrink-0 mt-2 h-14 border border-solid border-neutral-200 max-md:max-w-full px-4" required aria-required="true" />
                 </div>
               </div>
               <div className="flex flex-wrap gap-6 mt-4 text-zinc-800 max-md:max-w-full">
                 <div className="flex flex-col flex-1 grow shrink-0 basis-0 w-fit max-md:max-w-full">
-                  <label for="email" className="self-start">Email address</label>
-                  <input type="email" id="email" name="email" className="flex shrink-0 mt-2 h-14 border border-solid border-neutral-200 max-md:max-w-full px-4" required aria-required="true" />
+                  <p>Email address</p>
+                  <Input type="email" id="email" name="email" className="flex shrink-0 mt-2 h-14 border border-solid border-neutral-200 max-md:max-w-full px-4" required aria-required="true" />
                 </div>
                 <div className="flex flex-col flex-1 grow shrink-0 basis-0 w-fit max-md:max-w-full">
-                  <label for="phone" className="self-start">Phone number</label>
-                  <input type="tel" id="phone" name="phone" className="flex shrink-0 mt-2 h-14 border border-solid border-neutral-200 max-md:max-w-full px-4" required aria-required="true" />
+                  <p>Phone number</p>
+                  <Input type="tel" id="phone" name="phone" className="flex shrink-0 mt-2 h-14 border border-solid border-neutral-200 max-md:max-w-full px-4" required aria-required="true" />
                 </div>
               </div>
               <div className="flex flex-wrap gap-6 mt-4 max-md:max-w-full">
                 <div className="flex flex-col flex-1 grow shrink-0 whitespace-nowrap basis-0 text-zinc-800 w-fit max-md:max-w-full">
-                  <label for="company" className="self-start">Company</label>
-                  <input type="text" id="company" name="company" className="flex shrink-0 mt-2 h-14 border border-solid border-neutral-200 max-md:max-w-full px-4" />
+                  <p>Company</p>
+                  <Input type="text" id="company" name="company" className="flex shrink-0 mt-2 h-14 border border-solid border-neutral-200 max-md:max-w-full px-4" />
                 </div>
                 <div className="flex flex-col flex-1 grow shrink-0 basis-0 w-fit max-md:max-w-full">
-                  <label for="country" className="self-start text-zinc-800">Country</label>
-                  <select id="country" name="country" className="flex gap-5 justify-between px-4 py-4 mt-2 border border-solid border-neutral-200 text-zinc-500 max-md:max-w-full" required aria-required="true">
-                    <option value="">Choose country</option>
-                  </select>
+                  <p>Country</p>
+                  <Select>
+                  <SelectTrigger value="choose country" className="flex gap-5 justify-between px-4 py-4 mt-2 border border-solid border-neutral-200 text-zinc-500 max-md:max-w-full">
+                    <SelectValue placeholder="choose country"/>
+                    <ChevronDown />
+                  </SelectTrigger>
+                  </Select>
                 </div>
               </div>
               <div className="flex flex-wrap gap-6 mt-4 max-md:max-w-full">
                 <div className="flex flex-col flex-1 grow shrink-0 basis-0 w-fit max-md:max-w-full">
-                  <label for="city" className="self-start text-zinc-800">City</label>
-                  <select id="city" name="city" className="flex gap-5 justify-between px-4 py-4 mt-2 border border-solid border-neutral-200 text-zinc-500 max-md:max-w-full" required aria-required="true">
-                    <option value="">Choose city</option>
-                  </select>
+                  <p>City</p>
+                  <Select>
+                  <SelectTrigger value="choose country" className="flex gap-5 justify-between px-4 py-4 mt-2 border border-solid border-neutral-200 text-zinc-500 max-md:max-w-full">
+                    <SelectValue placeholder="choose city"/>
+                    <ChevronDown />
+                  </SelectTrigger>
+                  </Select>
                 </div>
                 <div className="flex flex-col flex-1 grow shrink-0 basis-0 text-zinc-800 w-fit max-md:max-w-full">
-                  <label for="zipCode" className="self-start">Zip code</label>
-                  <input type="text" id="zipCode" name="zipCode" className="flex shrink-0 mt-2 h-14 border border-solid border-neutral-200 max-md:max-w-full px-4" required aria-required="true" />
+                  <p>Zip code</p>
+                  <Input type="text" id="zipCode" name="zipCode" className="flex shrink-0 mt-2 h-14 border border-solid border-neutral-200 max-md:max-w-full px-4" required aria-required="true" />
                 </div>
               </div>
               <div className="flex flex-wrap gap-6 mt-4 text-zinc-800 max-md:max-w-full">
                 <div className="flex flex-col flex-1 grow shrink-0 basis-0 w-fit max-md:max-w-full">
-                  <label for="address1" className="self-start">Address 1</label>
-                  <input type="text" id="address1" name="address1" className="flex shrink-0 mt-2 h-14 border border-solid border-neutral-200 max-md:max-w-full px-4" required aria-required="true" />
+                  <p>Address 1</p>
+                  <Input type="text" id="address1" name="address1" className="flex shrink-0 mt-2 h-14 border border-solid border-neutral-200 max-md:max-w-full px-4" required aria-required="true" />
                 </div>
                 <div className="flex flex-col flex-1 grow shrink-0 basis-0 w-fit max-md:max-w-full">
-                  <label for="address2" className="self-start">Address 2</label>
-                  <input type="text" id="address2" name="address2" className="flex shrink-0 mt-2 h-14 border border-solid border-neutral-200 max-md:max-w-full px-4" />
+                  <p>Address 2</p>
+                  <Input type="text" id="address2" name="address2" className="flex shrink-0 mt-2 h-14 border border-solid border-neutral-200 max-md:max-w-full px-4" />
                 </div>
               </div>
               <h2 className="self-start mt-8 text-xl font-bold leading-snug text-zinc-800">
                 Billing Address
               </h2>
               <div className="flex gap-2 self-start mt-1.5 text-sm leading-loose text-neutral-600">
-                <input type="checkbox" id="sameAsShipping" name="sameAsShipping" className="w-5 h-5 border border-solid border-stone-300" />
-                <label for="sameAsShipping">Same as shipping address</label>
+                <Input type="checkbox" id="sameAsShipping" name="sameAsShipping" className="w-5 h-5 border border-solid border-stone-300" />
+                <p>Same as shipping address</p>
               </div>
               <div className="flex flex-wrap gap-6 mt-6">
                 <button type="button" className="flex flex-col flex-1 grow shrink-0 basis-0 text-neutral-600 w-fit max-md:max-w-full">
@@ -148,7 +162,7 @@ const page = () => {
             </form>
           </div>
 
-          <div className="flex flex-col ml-5 w-[424px] h-[700px] max-md:ml-0 max-md:w-full">
+          <div className="flex flex-col ml-5 w-[424px] h-[600px] max-md:ml-0 max-md:w-full">
             <div className="flex flex-col items-start p-6 mx-auto w-full text-sm border border-solid border-neutral-200 max-md:px-5 max-md:mt-6 max-md:max-w-full">
               <div className="flex gap-4 text-neutral-600">
                 <Image
@@ -184,7 +198,7 @@ const page = () => {
                 </div>
               </div>
               <hr className="w-full mt-4 border-t border-neutral-200" />
-              <div className="flex gap-10 self-stretch mt-6 text-base whitespace-nowrap">
+              <div className="flex gap-8 self-stretch mt-4 text-base whitespace-nowrap">
                 <dl className="flex flex-col flex-1 text-neutral-600">
                   <dt>Sub-total</dt>
                   <dd className="mt-4 max-md:mr-0.5">130$</dd>
@@ -211,7 +225,7 @@ const page = () => {
       </div>
 
       {/* Footer */}
-      <div className="footer absolute top-[1373px]">
+      <div className="footer absolute top-[1473px]">
         <Footer />
       </div>
 

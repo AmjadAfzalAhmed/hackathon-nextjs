@@ -30,7 +30,7 @@ const Navbar = () => {
                     </div>
                     <div className="flex gap-2 whitespace-nowrap">
                         <form className="flex flex-auto gap-10 px-7 py-4 rounded-3xl border border-amber-500 border-solid max-md:px-5" role="search">
-                            <label for="search-input" className="sr-only">Search</label>
+                            
                             <input type="search" id="search-input" placeholder="Search..." className="bg-transparent text-white placeholder-white focus:outline-none" />
                             <button type="submit" aria-label="Search">
                                 <Search className="object-contain shrink-0 w-6 aspect-square" />
