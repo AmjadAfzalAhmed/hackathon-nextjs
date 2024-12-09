@@ -7,7 +7,7 @@ import icon from '/public/images/icon.png'
 function HomeSection9() {
     return (
         <div>
-            <div className="w-[1320px] h-[732px] absolute top-[6907px] left-[300px] flex flex-col items-center">
+            <div className="w-[1320px] h-[735px] absolute top-[6907px] left-[300px] flex flex-col items-center">
                 <h2 className="text-3xl leading-none text-amber-500">Blog Post</h2>
                 <div
                     className="mt-2 text-5xl font-bold leading-none text-white max-md:max-w-full max-md:text-4xl"
