@@ -1,4 +1,3 @@
-
 import pic8 from '/public/images/bg.png'
 import pic9 from '/public/images/front.png'
 import lettuce from '/public/images/lettuce.png'
@@ -9,6 +8,7 @@ import glow from '/public/images/glow.png'
 import italian from '/public/images/italian.png'
 import slice from '/public/images/slice.png'
 import mushroom from '/public/images/mushroom.png'
+
 import Image from 'next/image'
 
 function HomeSection5() {

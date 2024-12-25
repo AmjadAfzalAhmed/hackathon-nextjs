@@ -1,50 +1,52 @@
 import Image from 'next/image'
 
 // import { FaArrowRight, FaMinus, FaPlus } from 'react-icons/fa'
-import {  ChevronRight, Link,} from 'lucide-react'
+import { ChevronRight } from 'lucide-react'
 // import { PiHandbag } from 'react-icons/pi'
 import bgPic from '/public/images/menutop.png'
 import Footer from '@/components/Footer'
+import Link from 'next/link'
 
 const page = () => {
     return (
         <main className='w-[1920px] h-[2126px]' >
             {/* Header */}
             <div className="w-[1920px] min-h-[90px] flex items-center bg-stone-950 " >
-      <nav className="max-w-[508px] h-6 flex flex-wrap absolute top-2 left-[451px] gap-8 self-stretch text-base text-white max-md:max-w-full" aria-label="Main navigation">
-            <Link href="/" className="grow font-bold text-amber-500" aria-current="page">Home</Link>
-            <Link href="/pages/check-out">Checkout</Link>
-            <Link href="/pages/faq">FAQ</Link>
-            <Link href="/pages/error">404</Link>
-            
-          </nav>
-      </div>
+                <nav className="max-w-[508px] h-6 flex flex-wrap absolute top-2 left-[451px] gap-8 self-stretch text-base text-white max-md:max-w-full" aria-label="Main navigation">
+                    <Link href="/" className="grow font-bold text-amber-500" aria-current="page">Home</Link>
+                    <Link href="/menu">Menu</Link>
+                    <Link href="/pages/check-out">Chekcout</Link>
+                    <Link href="/pages/faq">FAQ</Link>
+                    <Link href="/pages/error">Error</Link>
 
-      <div className="w-[1920px] h-[410px]">
-        <Image
-          src={bgPic}
-          className="object-contain w-full aspect-[4.67] -z-10"
-          alt="Decorative banner image"
-        />
-        <div className='w-[225px] h-[104px] z-100'>
-          <h1 className='text-white text-5xl font-bold absolute top-[198px] left-[850px] leading-14'>FAQ Page</h1>
+                </nav>
+            </div>
 
-          <div className='w-[133px] h-7 flex items-center absolute top-[274px] left-[897px]'>
-            <Link href='/' className='text-white text-[20px] leading-7'>Home</Link>
-            <ChevronRight className='w-4 h-4 text-white' />
-            <Link href='menu' className='text-[#ff9f0d] text-[20px] font-normal leading-7'>FAQ</Link>
-          </div>
+            <div className="w-[1920px] h-[410px]">
+                <Image
+                    src={bgPic}
+                    className="object-contain w-full aspect-[4.67] -z-10"
+                    alt="Decorative banner image"
+                />
+                <div className='w-[225px] h-[104px] z-100'>
+                    <h1 className='text-white text-5xl font-bold absolute top-[198px] left-[850px] leading-14'>FAQ Page</h1>
 
-        </div>
+                    <div className='w-[133px] h-7 flex items-center absolute top-[274px] left-[897px]'>
+                        <Link href='/' className='text-white text-[20px] leading-7'>Home</Link>
+                        <ChevronRight className='w-4 h-4 text-white' />
+                        <Link href='menu' className='text-[#ff9f0d] text-[20px] font-normal leading-7'>FAQ</Link>
+                    </div>
 
-      </div>
+                </div>
+
+            </div>
 
 
             {/* Mid Section */}
 
             <div
                 className="w-[630px] h-[342px] absolute top-[530px] left-[645px] flex flex-col items-center text-lg font-bold rounded-md max-w-[630px]"
-                
+
                 aria-labelledby="error-title"
             >
                 <div
@@ -70,7 +72,7 @@ const page = () => {
                 <a
                     href="/"
                     className="gap-2.5 self-stretch px-12 py-4 mt-8 leading-none text-white bg-amber-500 rounded-md max-md:px-5 text-center hover:bg-amber-600 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:ring-offset-2"
-                    
+
                     aria-label="Return to homepage"
                 >
                     Go to home

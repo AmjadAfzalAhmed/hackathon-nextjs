@@ -8,9 +8,10 @@ function page() {
     <div>
       <nav className="max-w-[508px] h-6 flex flex-wrap absolute top-2 left-[451px] gap-8 self-stretch text-base text-white max-md:max-w-full" aria-label="Main navigation">
         <Link href="/" className="grow font-bold text-amber-500" aria-current="page">Home</Link>
-        <Link href="/pages/check-out">Checkout</Link>
+        <Link href="/pages">Pages</Link>
+        <Link href="/pages/check-out">Chekcout</Link>
         <Link href="/pages/faq">FAQ</Link>
-        <Link href="/pages/error">404</Link>
+        <Link href="/pages/error">Error</Link>
 
       </nav>
 

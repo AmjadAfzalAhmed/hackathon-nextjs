@@ -22,12 +22,11 @@ function HomeSection2() {
                         <div className="flex flex-col w-3/12 max-md:ml-0 max-md:w-full">
                             <div
                                 className="flex relative flex-col grow py-28 pr-16 font-bold rounded-md aspect-[0.93] max-md:py-24 max-md:mt-8"
-
                                 aria-label="Fast Food Dish with 30% discount"
                             >
                                 <Image
                                     src={one}
-                                    className="object-cover absolute inset-0 size-full"
+                                    className="object-cover absolute inset-0 size-full rounded-md "
                                     alt="Fast Food Dish Special Offer"
                                 />
                                 <div

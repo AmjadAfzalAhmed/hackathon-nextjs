@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import tikka from '/public/images/tikka.png'
 import { FaArrowRight } from 'react-icons/fa'
-import { ChevronDown, ChevronLeft, ChevronRight, Link, Search, UserRound } from 'lucide-react'
+import { ChevronDown, ChevronLeft, ChevronRight, Search, UserRound } from 'lucide-react'
 import { PiHandbag } from 'react-icons/pi'
 import bgPic from '/public/images/menutop.png'
 import Footer from '@/components/Footer'
@@ -13,6 +13,8 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select"
+import Link from 'next/link'
+
 
 
 
@@ -35,7 +37,7 @@ const page = () => {
             <Link href="/pages/check-out">Chekcout</Link>
             <Link href="/pages/faq">FAQ</Link>
             <Link href="/pages/error">Error</Link>
-            
+
           </nav>
           <div className="flex gap-4 self-stretch my-auto" aria-label="Social media links">
             <Search className=" absolute left-[1216px] top-2 shrink-0 w-6 h-6 aspect-square text-[#ffffff]" />
@@ -102,10 +104,10 @@ const page = () => {
                 <div className="flex flex-col flex-1 grow shrink-0 basis-0 w-fit max-md:max-w-full">
                   <p>Country</p>
                   <Select>
-                  <SelectTrigger value="choose country" className="flex gap-5 justify-between px-4 py-4 mt-2 border border-solid border-neutral-200 text-zinc-500 max-md:max-w-full">
-                    <SelectValue placeholder="choose country"/>
-                    <ChevronDown />
-                  </SelectTrigger>
+                    <SelectTrigger value="choose country" className="flex gap-5 justify-between px-4 py-4 mt-2 border border-solid border-neutral-200 text-zinc-500 max-md:max-w-full">
+                      <SelectValue placeholder="choose country" />
+                      <ChevronDown />
+                    </SelectTrigger>
                   </Select>
                 </div>
               </div>
@@ -113,10 +115,10 @@ const page = () => {
                 <div className="flex flex-col flex-1 grow shrink-0 basis-0 w-fit max-md:max-w-full">
                   <p>City</p>
                   <Select>
-                  <SelectTrigger value="choose country" className="flex gap-5 justify-between px-4 py-4 mt-2 border border-solid border-neutral-200 text-zinc-500 max-md:max-w-full">
-                    <SelectValue placeholder="choose city"/>
-                    <ChevronDown />
-                  </SelectTrigger>
+                    <SelectTrigger value="choose country" className="flex gap-5 justify-between px-4 py-4 mt-2 border border-solid border-neutral-200 text-zinc-500 max-md:max-w-full">
+                      <SelectValue placeholder="choose city" />
+                      <ChevronDown />
+                    </SelectTrigger>
                   </Select>
                 </div>
                 <div className="flex flex-col flex-1 grow shrink-0 basis-0 text-zinc-800 w-fit max-md:max-w-full">
