@@ -12,10 +12,14 @@ import bg1 from '/public/images/chooseBg.png'
 import { BsCupHot } from "react-icons/bs"
 import person from '/public/images/Person.png'
 import stud from '/public/images/Student.png'
-import bg2 from '/public/images/yellowBg.png'
 import trans from '/public/images/yellowTrans.png'
-import mark from '/public/images/Mark.png'
+import mark from '/public/images/mark.png'
+import round from '/public/images/homeSec7.png'
+import numb from '/public/images/Quotes.png'
+import stars from '/public/images/star.png'
+import sideImg from '/public/images/sideImg.png'
 import { FaFacebookF, FaPinterest, FaTwitter, FaYoutube } from 'react-icons/fa';
+import Footer from '@/components/Footer';
 
 function About() {
   return (
@@ -29,25 +33,27 @@ function About() {
                 F<span className="text-white">oo</span>d<span className="text-amber-500">tuck</span>
               </a>
               <div className="flex flex-wrap gap-8 self-stretch my-auto text-base text-white max-md:max-w-full" >
-                <Link href="/" className="grow font-bold text-amber-500" role="menuitem">Home</Link>
-                <Link href="/menu" className="hover:text-amber-500" role="menuitem">Menu</Link>
-                <Link href="/blog" className="hover:text-amber-500" role="menuitem">Blog</Link>
-                <Link href="/pages" className="hover:text-amber-500" role="menuitem">Pages</Link>
-                <Link href="/about" className="hover:text-amber-500" role="menuitem">About</Link>
-                <Link href="/shop" className="hover:text-amber-500" role="menuitem">Shop</Link>
-                <Link href="/contact" className="hover:text-amber-500" role="menuitem">Contact</Link>
+                <Link href="/" className="grow font-bold text-amber-500" >Home</Link>
+                <Link href="/menu" className="hover:text-amber-500" >Menu</Link>
+                <Link href="/blog" className="hover:text-amber-500" >Blog</Link>
+                <Link href="/pages" className="hover:text-amber-500" >Pages</Link>
+                <Link href="/about" className="hover:text-amber-500" >About</Link>
+                <Link href="/shopdetails" className="hover:text-amber-500" >Shop</Link>
+                <Link href="/contact" className="hover:text-amber-500" >Contact</Link>
               </div>
               <div className="flex gap-4 self-stretch my-auto" aria-label="Social media links">
+
                 <Search className="object-contain shrink-0 w-6 h-6 aspect-square text-white" />
                 <FiUser className="object-contain shrink-0 w-6 h-6 aspect-square text-white" />
                 <PiHandbag className="object-contain shrink-0 w-6 h-6 aspect-square text-white" />
+
               </div>
             </div>
           </nav>
           <h1 className="relative mt-28 text-5xl font-bold leading-none text-white max-md:mt-10 max-md:text-4xl">About Us</h1>
           <nav className="flex relative gap-1 mt-5 mb-0 max-w-full text-xl leading-snug whitespace-nowrap w-[137px] max-md:mb-2.5" aria-label="Breadcrumb">
             <a href="/" className="grow text-white hover:text-amber-500">Home</a>
-            <ChevronRight className="text-white object-contain shrink-0 my-auto w-4 aspect-square" />
+            <ChevronRight className="object-contain shrink-0 my-auto w-4 aspect-square text-white" />
             <span className="text-amber-500" aria-current="page">About</span>
           </nav>
         </div>
@@ -137,7 +143,8 @@ function About() {
                 className="flex overflow-hidden flex-col grow items-center pb-1.5 mt-3.5 max-md:mt-10"
 
               >
-                <Image src={stud} alt='graduateIcon' className="object-contain w-20 h-20 aspect-square" />
+                <Image src={stud} alt='graduateIcon' className="object-contain w-20 h-20 aspect-square"
+                />
 
                 <h3 className="mt-6 text-2xl font-bold leading-none text-zinc-800">
                   Best Chef
@@ -168,7 +175,8 @@ function About() {
               <div className="flex flex-col items-center pb-1.5 max-md:mt-10">
 
 
-                <Image src={person} alt="manIco" className="object-contain w-20 h-20 aspect-[1.03]" />
+                <Image src={person} alt="manIco" className="object-contain w-20 h-20 aspect-[1.03]"
+                />
 
                 <h3 className="mt-6 text-2xl font-bold leading-none text-zinc-800">
                   Clean Environment
@@ -185,142 +193,247 @@ function About() {
 
       {/* Team Member */}
 
-      <div className="w-[1920px] h-[686px] absolute top-[2369px] flex flex-col rounded-none">
-        <div
-          className="flex relative flex-col items-center px-20 pt-32 pb-56 w-full min-h-[460px] max-md:px-5 max-md:py-24 max-md:max-w-full"
-        >
-          <Image src={trans} alt="bg1" className="absolute inset-0 z-0" />
-          <Image src={bg2} className="object-cover absolute inset-0 size-full"
-            alt="Team members background banner" />
+      <div className='w-[1920px] h-[686px]'>
+        <div className='w-[1920px] h-[460px] bg-amber-500 opacity-70 absolute top-[2369px] -z-10'>
+        </div>
+        <Image src={trans} alt='team member' className='w-[1920px] h-[460px] object-cover -z-50 absolute top-[2369px]' />
+        <div className="text flex flex-col items-center justify-center max-w-[418px] min-h-[176px] absolute top-[2457px] left-[742px] text-white text-center">
 
-          <div className="flex relative flex-col mb-0 max-w-full w-[418px] max-md:mb-2.5">
-            <h1
-              className="self-center text-5xl font-bold leading-none text-white max-md:text-4xl"
-            >
-              Team Member
-            </h1>
-            <p className="mt-2 text-base leading-6 text-center text-white">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              <br />
-              Varius sed pharetra dictum neque massa congue
-            </p>
-          </div>
+          <h1 className='w-[324px] h-[56px] text-5xl font-bold z-10 '>Team Member</h1>
+
+          <p className='w-[418px] h-[48px]'>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Varius sed pharetra dictum neque massa congue
+          </p>
+
         </div>
 
-        <div className="z-10 self-center mt-0 w-full max-w-[1400px] max-md:max-w-full">
+        <div className="cards flex absolute top-[2667px] left-[300px] z-30 gap-5">
+          <div className="card-one w-[312px] h-[398px] flex flex-col text-center bg-white shadow">
+            <Image src={mark} alt='card one' className='w-[312px] h-[320px]' />
+            <h2 className='font-semibold text-xl mt-4'>Mark Henry</h2>
+            <p>Owner</p>
+          </div>
+          <div className="card-two w-[312px] h-[398px] flex flex-col text-center bg-white shadow">
+            <Image src={mark} alt='card two' className='w-[312px] h-[320px]' />
+            <h2 className='font-semibold text-xl mt-4'>Lucky Helen</h2>
+            <p>Chef</p>
+          </div>
+          <div className="card-three w-[312px] h-[398px] flex flex-col text-center bg-white shadow">
+            <Image src={mark} alt='card three' className='w-[312px] h-[320px]' />
+            <h2 className='font-semibold text-xl mt-4'>Moon Henry</h2>
+            <p>Founder</p>
+          </div>
+          <div className="card-four w-[312px] h-[398px] flex flex-col text-center bg-white shadow">
+            <Image src={mark} alt='card four' className='w-[312px] h-[320px]' />
+            <h2 className='font-semibold text-xl mt-4'>Tom Morrow</h2>
+            <p>Specialist</p>
+          </div>
+        </div>
+        <div className="socials w-[37px] h-[176px] flex flex-col gap-3 justify-center items-center absolute top-[2681px] left-[887px] z-50 inset-0">
+              <div className='w-[36px] h-[35px] bg-white hover:bg-amber-500 hover:text-white flex items-center justify-center'><FaFacebookF /></div>
+              <div className='w-[36px] h-[35px] bg-white hover:bg-amber-500 hover:text-white flex items-center justify-center'><FaTwitter /> </div>
+              <div className='w-[36px] h-[35px] bg-amber-500 text-white hover:bg-white hover:text-black flex items-center justify-center'><FaYoutube /></div>
+              <div className='w-[36px] h-[35px] bg-white hover:bg-amber-500 hover:text-white flex items-center justify-center'><FaPinterest /></div>  
+        </div>
+      </div>
+
+      {/* What Clients Say  */}
+      <div className="w-[1273px] h-[770px] absolute top-[3175px] left-[300px] flex overflow-hidden flex-col items-start pr-20 pb-5 max-md:pr-5" aria-label="Testimonials Section">
+        <h2 className="text-3xl leading-none text-amber-500 max-md:ml-1 font-greatVibes">
+          Testimonials
+        </h2>
+        <h3 className="mt-2 text-5xl font-bold leading-none text-black max-md:max-w-full max-md:text-4xl">
+          What our client are saying
+        </h3>
+        <div className="flex flex-col items-center self-center mt-14 ml-6 w-full max-w-[868px] max-md:mt-10 max-md:max-w-full">
+          <Image
+            src={round}
+            alt="Profile picture of testimonial author"
+            className="object-contain z-10 max-w-full rounded-full aspect-[0.99] w-[133px]"
+          />
+          <div className="flex flex-col self-stretch px-20 pt-24 pb-8 bg-white shadow-2xl max-md:px-5 max-md:max-w-full">
+            <div className="flex flex-col items-center max-md:max-w-full">
+              <Image
+                src={numb}
+                alt="Quotation mark icon"
+                className="object-contain w-12 aspect-square"
+              />
+              <blockquote className="self-stretch mt-8 text-lg leading-7 text-center text-neutral-600 max-md:max-w-full">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque diam
+                pellentesque bibendum non dui volutpat fringilla bibendum. Urna, elit
+                augue urna, vitae feugiat pretium donec id elementum. Ultrices mattis
+                sed vitae mus risus. Lacus nisi, et ac dapibus sit eu velit in
+                consequat.
+              </blockquote>
+              <Image
+                src={stars}
+                alt="Rating stars"
+                className="object-contain mt-10 max-w-full aspect-[6.33] w-[152px] max-md:mt-10"
+              />
+              <div className="mt-4 text-2xl font-bold leading-none text-zinc-800">
+                Alamin Hasan
+              </div>
+              <div className="mt-2 text-base text-zinc-500">Food Specialist</div>
+            </div>
+          </div>
+          <Image
+            src={sideImg}
+            alt="Decorative dots"
+            className="object-contain mt-14 aspect-[5.38] w-[86px] max-md:mt-10"
+          />
+        </div>
+      </div>
+
+      {/* Food Menu */}
+
+      <div className="flex flex-col pt-6 w-[1320px] h-[941px] absolute top-[4065px] left-[300px]">
+        <h2 className="self-center text-5xl font-bold leading-none text-zinc-800 max-md:text-4xl">
+          Our Food Menu
+        </h2>
+        <p className="self-center mt-2 text-base leading-6 text-center text-neutral-600">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          <br />
+          Varius sed pharetra dictum neque massa congue
+        </p>
+        <nav aria-label="Menu Categories" className="flex flex-wrap gap-10 self-center mt-14 max-w-full text-xl leading-snug whitespace-nowrap text-neutral-600 w-[622px] max-md:mt-10">
+          <button className="grow text-amber-500" aria-current="true">Breakfast</button>
+          <button>Lunch</button>
+          <button>Dinner</button>
+          <button>Dessert</button>
+          <button>Drink</button>
+          <button>Snack</button>
+        </nav>
+        <div className="mt-6 w-full border border-solid bg-neutral-200 border-neutral-200 min-h-[2px] max-md:max-w-full" ></div>
+        <div className="z-10 shrink-0 ml-96 h-0.5 bg-amber-500 border-2 border-amber-500 border-solid w-[91px] max-md:ml-2.5" aria-hidden="true"></div>
+        <div className="mt-14 w-full max-md:mt-10 max-md:max-w-full">
           <div className="flex gap-5 max-md:flex-col">
-            <div className="flex flex-col w-6/12 h-[398px] max-md:ml-0 max-md:w-full">
-              <div className="grow max-md:mt-6 max-md:max-w-full">
-                <div className="flex gap-5 max-md:flex-col">
-                  <div className="flex flex-col w-3/5 max-md:ml-0 max-md:w-full">
-                    <Image
-                      src={mark}
-                      className="object-contain grow -mr-14 w-full aspect-[1.19] max-md:max-w-full"
-                      alt="Team member group photo"
-                    />
-                  </div>
-                  <div className="flex flex-col ml-5 w-2/5 max-md:ml-0 max-md:w-full">
-                    <div className="flex flex-col grow">
-                      <div className="flex relative flex-col pt-6 w-full aspect-[0.784]">
-                        <Image
-                          src={mark}
-                          className="object-cover absolute inset-0 size-full"
-                          alt="Lucky Helen profile"
-                        />
-                        <div
-                          className="flex relative flex-col self-end mr-6 text-base whitespace-nowrap text-neutral-600 w-[37px] max-md:mr-2.5"
-                          
-                        >
-                          <button
-                            className="px-3.5 w-full h-9 rounded-sm bg-zinc-100 fill-zinc-100"
-                            aria-label="Social media link 1"
-                          ><FaFacebookF /></button>
-                          <button
-                            className="px-3 mt-3 w-full h-9 text-center rounded-sm bg-zinc-100 fill-zinc-100"
-                            aria-label="Social media link 2"
-                          ><FaTwitter /></button>
-                          <button
-                            className="px-2.5 mt-3 w-full h-9 text-center bg-amber-500 rounded-sm fill-amber-500 text-zinc-100"
-                            aria-label="Social media link 3"
-                          ><FaYoutube /></button>
-                          <button
-                            className="px-2.5 mt-3 w-full h-9 text-center rounded-sm bg-zinc-100 fill-zinc-100"
-                            aria-label="Social media link 4"
-                          ><FaPinterest /></button>
-                        </div>
-                        <div
-                          className="flex relative flex-col items-center px-16 py-4 mt-28 bg-white shadow-[0px_0px_80px_rgba(205,205,205,0.25)] max-md:px-5 max-md:mt-10"
-                        >
-                          <h2
-                            className="text-xl font-bold leading-snug text-neutral-600"
-                          >
-                            Lucky Helen
-                          </h2>
-                          <p className="mt-1 text-base text-zinc-500">Chef</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+            <div className="flex flex-col w-6/12 max-md:ml-0 max-md:w-full">
+              <article className="flex flex-col w-full text-base max-md:mt-7 max-md:max-w-full">
+                <div className="flex flex-wrap gap-5 justify-between text-2xl font-bold leading-none text-amber-500 max-md:max-w-full">
+                  <h3>Alder Grilled Chinook Salmon</h3>
+                  <span aria-label="Price">32$</span>
                 </div>
-              </div>
+                <p className="self-start mt-2 text-neutral-600">
+                  Toasted French bread topped with romano, cheddar
+                </p>
+                <span className="self-start mt-2 text-zinc-500" aria-label="Calories">560 CAL</span>
+                <div className="shrink-0 mt-4 h-px border border-dashed bg-neutral-200 border-neutral-200 max-md:max-w-full"></div>
+              </article>
             </div>
-            
             <div className="flex flex-col ml-5 w-6/12 max-md:ml-0 max-md:w-full">
-              <div className="grow max-md:mt-6 max-md:max-w-full">
-                <div className="flex gap-5 max-md:flex-col">
-                  <div className="flex flex-col w-6/12 max-md:ml-0 max-md:w-full">
-                    <div className="flex flex-col grow max-md:mt-6">
-                      <div
-                        className="flex relative flex-col pt-80 w-full aspect-[0.784] max-md:pt-24"
-                      >
-                        <Image
-                          src={mark}
-                          className="object-cover absolute inset-0 size-full"
-                          alt="Moon Henry profile"
-                        />
-                        <div
-                          className="flex relative flex-col items-center px-16 py-4 bg-white shadow-[0px_0px_80px_rgba(205,205,205,0.25)] max-md:px-5"
-                        >
-                          <h2
-                            className="text-xl font-bold leading-snug text-neutral-600"
-                          >
-                            Moon Henry
-                          </h2>
-                          <p className="mt-1 text-base text-zinc-500">Founder</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="flex flex-col ml-5 w-6/12 max-md:ml-0 max-md:w-full">
-                    <div className="flex flex-col grow max-md:mt-6">
-                      <div
-                        className="flex relative flex-col pt-80 w-full aspect-[0.784] max-md:pt-24"
-                      >
-                        <Image
-                          src={mark}
-                          className="object-cover absolute inset-0 size-full"
-                          alt="Tom Monrow profile"
-                        />
-                        <div
-                          className="flex relative flex-col items-center px-16 py-4 bg-white shadow-[0px_0px_80px_rgba(205,205,205,0.25)] max-md:px-5"
-                        >
-                          <h2
-                            className="text-xl font-bold leading-snug text-neutral-600"
-                          >
-                            Tom Monrow
-                          </h2>
-                          <p className="mt-1 ml-3 text-base text-zinc-500">
-                            Specialist
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+              <article className="flex flex-col w-full text-base max-md:mt-6 max-md:max-w-full">
+                <div className="flex flex-wrap gap-5 justify-between text-2xl font-bold leading-none max-md:max-w-full">
+                  <h3 className="text-zinc-800">Alder Grilled Chinook Salmon</h3>
+                  <span className="text-amber-500" aria-label="Price">32$</span>
                 </div>
-              </div>
+                <p className="self-start mt-2 text-neutral-600">
+                  Toasted French bread topped with romano, cheddar
+                </p>
+                <span className="self-start mt-2 text-zinc-500" aria-label="Calories">560 CAL</span>
+                <div className="shrink-0 mt-4 h-px border border-dashed bg-neutral-200 border-neutral-200 max-md:max-w-full"></div>
+              </article>
             </div>
           </div>
         </div>
+        <div className="mt-6 w-full max-md:max-w-full">
+          <div className="flex gap-5 max-md:flex-col">
+            <div className="flex flex-col w-6/12 max-md:ml-0 max-md:w-full">
+              <article className="flex flex-col w-full text-base max-md:mt-7 max-md:max-w-full">
+                <div className="flex flex-wrap gap-5 justify-between text-2xl font-bold leading-none max-md:max-w-full">
+                  <h3 className="text-zinc-800">Alder Grilled Chinook Salmon</h3>
+                  <span className="text-amber-500" aria-label="Price">32$</span>
+                </div>
+                <p className="self-start mt-2 text-neutral-600">
+                  Toasted French bread topped with romano, cheddar
+                </p>
+                <span className="self-start mt-2 text-zinc-500" aria-label="Calories">560 CAL</span>
+                <div className="shrink-0 mt-4 h-px border border-dashed bg-neutral-200 border-neutral-200 max-md:max-w-full"></div>
+              </article>
+            </div>
+            <div className="flex flex-col ml-5 w-6/12 max-md:ml-0 max-md:w-full">
+              <article className="flex flex-col w-full text-base max-md:mt-6 max-md:max-w-full">
+                <div className="flex flex-wrap gap-5 justify-between text-2xl font-bold leading-none max-md:max-w-full">
+                  <h3 className="text-zinc-800">Alder Grilled Chinook Salmon</h3>
+                  <span className="text-amber-500" aria-label="Price">32$</span>
+                </div>
+                <p className="self-start mt-2 text-neutral-600">
+                  Toasted French bread topped with romano, cheddar
+                </p>
+                <span className="self-start mt-2 text-zinc-500" aria-label="Calories">560 CAL</span>
+                <div className="shrink-0 mt-4 h-px border border-dashed bg-neutral-200 border-neutral-200 max-md:max-w-full"></div>
+              </article>
+            </div>
+          </div>
+        </div>
+        <div className="mt-9 w-full max-md:max-w-full">
+          <div className="flex gap-5 max-md:flex-col">
+            <div className="flex flex-col w-6/12 max-md:ml-0 max-md:w-full">
+              <article className="flex flex-col w-full text-base max-md:mt-7 max-md:max-w-full">
+                <div className="flex flex-wrap gap-5 justify-between text-2xl font-bold leading-none max-md:max-w-full">
+                  <h3 className="text-zinc-800">Alder Grilled Chinook Salmon</h3>
+                  <span className="text-amber-500" aria-label="Price">32$</span>
+                </div>
+                <p className="self-start mt-2 text-neutral-600">
+                  Toasted French bread topped with romano, cheddar
+                </p>
+                <span className="self-start mt-2 text-zinc-500" aria-label="Calories">560 CAL</span>
+                <div className="shrink-0 mt-4 h-px border border-dashed bg-neutral-200 border-neutral-200 max-md:max-w-full"></div>
+              </article>
+            </div>
+            <div className="flex flex-col ml-5 w-6/12 max-md:ml-0 max-md:w-full">
+              <article className="flex flex-col w-full text-base max-md:mt-6 max-md:max-w-full">
+                <div className="flex flex-wrap gap-5 justify-between text-2xl font-bold leading-none max-md:max-w-full">
+                  <h3 className="text-zinc-800">Alder Grilled Chinook Salmon</h3>
+                  <span className="text-amber-500" aria-label="Price">32$</span>
+                </div>
+                <p className="self-start mt-2 text-neutral-600">
+                  Toasted French bread topped with romano, cheddar
+                </p>
+                <span className="self-start mt-2 text-zinc-500" aria-label="Calories">560 CAL</span>
+                <div className="shrink-0 mt-4 h-px border border-dashed bg-neutral-200 border-neutral-200 max-md:max-w-full"></div>
+              </article>
+            </div>
+          </div>
+        </div>
+        <div className="mt-6 w-full max-md:max-w-full">
+          <div className="flex gap-5 max-md:flex-col">
+            <div className="flex flex-col w-6/12 max-md:ml-0 max-md:w-full">
+              <article className="flex flex-col w-full text-base max-md:mt-7 max-md:max-w-full">
+                <div className="flex flex-wrap gap-5 justify-between text-2xl font-bold leading-none max-md:max-w-full">
+                  <h3 className="text-zinc-800">Alder Grilled Chinook Salmon</h3>
+                  <span className="text-amber-500" aria-label="Price">32$</span>
+                </div>
+                <p className="self-start mt-2 text-neutral-600">
+                  Toasted French bread topped with romano, cheddar
+                </p>
+                <span className="self-start mt-2 text-zinc-500" aria-label="Calories">560 CAL</span>
+                <div className="shrink-0 mt-4 h-px border border-dashed bg-neutral-200 border-neutral-200 max-md:max-w-full"></div>
+              </article>
+            </div>
+            <div className="flex flex-col ml-5 w-6/12 max-md:ml-0 max-md:w-full">
+              <article className="flex flex-col w-full text-base max-md:mt-6 max-md:max-w-full">
+                <div className="flex flex-wrap gap-5 justify-between text-2xl font-bold leading-none max-md:max-w-full">
+                  <h3 className="text-zinc-800">Alder Grilled Chinook Salmon</h3>
+                  <span className="text-amber-500" aria-label="Price">32$</span>
+                </div>
+                <p className="self-start mt-2 text-neutral-600">
+                  Toasted French bread topped with romano, cheddar
+                </p>
+                <span className="self-start mt-2 text-zinc-500" aria-label="Calories">560 CAL</span>
+                <div className="shrink-0 mt-4 h-px border border-dashed bg-neutral-200 border-neutral-200 max-md:max-w-full" ></div>
+              </article>
+            </div>
+          </div>
+        </div>
+        <button className="gap-2.5 self-center px-8 py-3.5 mt-14 text-base text-amber-500 border border-amber-500 border-solid max-md:px-5 max-md:mt-10">
+          View menu
+        </button>
+      </div>
+
+      {/* Footer */}
+      <div className="footer absolute top-[5126px]">
+        <Footer />
       </div>
 
     </main>
