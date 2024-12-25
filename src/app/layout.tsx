@@ -14,7 +14,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "FoodTuck Restaurant",
+  title: "FoodTuc Restaurant",
   description: "Created using Figma Design",
 };
 
