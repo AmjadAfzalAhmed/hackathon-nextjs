@@ -14,10 +14,10 @@ import pic4 from '/public/images/pic4.png'
 function Hero() {
   return (
 
-    <div className="flex relative flex-col items-center pb-20 w-[1920px] min-h-[950px] max-md:px-5 max-md:pt-24 max-md:max-w-full">
+    <div className="flex relative flex-col items-center pb-20 max-lg:w-[1920px] min-h-[950px] max-md:px-5 max-md:pt-24 max-md:w-full">
       <Image src={backG} alt="Background" className="object-cover absolute inset-0 size-full opacity-10" />
       {/* Navbar */}
-      <div className="w-[1320px] h-[78px] absolute top-6 flex flex-col">
+      <div className="sm:w-[1320px] h-[78px] absolute top-6 flex flex-col">
         <div className="self-center text-2xl font-bold leading-none text-white">
           <span className="text-amber-500">Food</span>
           <span className="text-white">tuck</span>

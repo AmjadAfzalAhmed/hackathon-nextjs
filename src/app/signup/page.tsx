@@ -9,7 +9,6 @@ import Link from 'next/link'
 import { Input } from '@/components/ui/input'
 import { BsEnvelope } from 'react-icons/bs'
 import { CiLock } from 'react-icons/ci'
-import { Checkbox } from "@/components/ui/checkbox"
 import Google from '/public/images/Google.png'
 import Apple from '/public/images/Apple.png'
 
@@ -66,8 +65,9 @@ const SignUp = () => {
                 <Input placeholder='Password' className='w-[360px] h-11 pl-10 border border-solid border-slate-400 rounded-none' />
                 <CiLock className='w-6 h-6 relative top-[-30px] left-[10px]'/>
                 </div>
-                <div className='relative left-[-110px]'>
-                <Checkbox className='bg-amber-500'/> Remember Me?
+                <div className='relative left-[-110px] flex items-center gap-2'>
+                                  
+                <Input type='checkbox' className='w-4 h-4' /> Remember Me?
                 </div>
                 <button className='w-[360px] h-[44px] bg-amber-500 text-white font-semibold text-center'>Sign Up</button>
                 <p className='relative left-28'>Forgot Password?</p>

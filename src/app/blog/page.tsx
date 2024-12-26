@@ -37,20 +37,20 @@ function Blog() {
         <div className='w-[1920px] h-[5019px]'>
             {/* Header */}
             <div className="w-[1920px] min-h-[90px]  flex items-center bg-stone-950 " >
-                <div className="w-[1320px] h-8 absolute top-[29px] left-[300px] flex flex-wrap gap-10 items-center">
+                <div className="w-[1320px] h-8 absolute top-[29px] left-40 flex flex-wrap gap-10 items-center">
                     <div className="w-[109px] h-8 self-stretch text-2xl font-bold leading-none text-amber-500 ">
 
                         <span className="text-white">Food</span>
 
                         <span className="text-amber-500">tuck</span>
                     </div>
-                    <nav className="max-w-[508px] h-6 flex flex-wrap absolute top-2 left-[451px] gap-8 self-stretch text-base text-white max-md:max-w-full" aria-label="Main navigation">
+                    <nav className="max-w-[508px] h-6 flex flex-wrap absolute top-2 left-72 gap-8 self-stretch text-base text-white max-md:max-w-full" aria-label="Main navigation">
                         <Link href="/" className="grow font-bold text-amber-500" aria-current="page">Home</Link>
                         <Link href="/menu">Menu</Link>
                         <Link href="/blog">Blog</Link>
                         <Link href="/pages">Pages</Link>
                         <Link href="/about">About</Link>
-                        <Link href="/shopdetails">Shop</Link>
+                        <Link href="/shop">Shop</Link>
                         <Link href="/contact">Contact</Link>
                     </nav>
                     <div className="flex gap-4 self-stretch my-auto" aria-label="Social media links">
@@ -70,9 +70,9 @@ function Blog() {
                 <div className='w-[225px] h-[104px] z-100'>
                     <h1 className='text-white text-5xl font-bold absolute top-[198px] left-[850px] leading-14'>Blog List</h1>
 
-                    <div className='w-[133px] h-7 flex items-center absolute top-[274px] left-[897px]'>
+                    <div className='w-[173px] h-7 flex items-center absolute top-[274px] left-[870px]'>
                         <Link href='/' className='text-white text-[20px] leading-7'>Home</Link>
-                        <ChevronRight className='w-4 h-4 text-white' />
+                        <ChevronRight className='w-5 h-5 text-white'/>                        
                         <Link href='/blog/blogdetails' className='text-[#ff9f0d] text-[20px] font-normal leading-7'>BlogDetails</Link>
                     </div>
 
@@ -107,7 +107,7 @@ function Blog() {
                     />
                     <Image
                         src={admin}
-                        className="w-6 max-md:w-5"
+                        className="w-80 max-md:w-5"
                         alt="Admin icon"
                     />
                 </div>
@@ -134,7 +134,7 @@ function Blog() {
 
 
             {/* Sect.2 */}
-            <div className="flex flex-col items-start text-base max-w-[872px] min-h-[830px] absolute top-[1416px] left-[301px]">
+            <div className="flex flex-col items-start text-base max-w-[872px] min-h-[830px] absolute top-[1416px] left-[300px] ">
                 <div
                     className="flex relative flex-col items-start self-stretch px-6 pt-6 pb-96 w-full text-white whitespace-nowrap min-h-[520px] max-md:px-5 max-md:pb-24 max-md:max-w-full"
                 >
@@ -297,7 +297,7 @@ function Blog() {
             </div>
 
             {/* Navigator */}
-            <div className="max-w-[306px] min-h-[51px] flex gap-3.5 items-start absolute top-[4074px] left-[583px]">
+            <div className="max-w-[306px] min-h-[51px] flex gap-3.5 items-start absolute top-[4074px] left-[300px]">
                 <div
                     className="flex flex-col items-center bg-white border border-solid border-zinc-100 h-[50px] stroke-zinc-100 w-[50px]"
                     aria-label="Step 1"
@@ -352,14 +352,12 @@ function Blog() {
                     <Input
                         type="text"
                         placeholder="Search Your Keyword"
-                        className="w-full h-full border border-solid border-neutral-200 bg-transparent focus:outline-none pr-[76px]"
+                        className="w-full h-full border border-solid rounded-none border-neutral-200 bg-transparent focus:outline-none pr-[76px]"
                     />
                     <div className="absolute right-0 top-0 flex items-center justify-center w-[76px] h-[70px] bg-amber-500">
                         <Search className="text-white" />
                     </div>
                 </div>
-
-
 
                 <div className="flex flex-col items-center px-16 py-9 mt-6 w-full text-base border border-solid border-neutral-200 text-zinc-500">
                     <Image

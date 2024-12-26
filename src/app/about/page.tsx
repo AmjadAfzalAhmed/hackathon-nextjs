@@ -38,7 +38,7 @@ function About() {
                 <Link href="/blog" className="hover:text-amber-500" >Blog</Link>
                 <Link href="/pages" className="hover:text-amber-500" >Pages</Link>
                 <Link href="/about" className="hover:text-amber-500" >About</Link>
-                <Link href="/shopdetails" className="hover:text-amber-500" >Shop</Link>
+                <Link href="/shop" className="hover:text-amber-500" >Shop</Link>
                 <Link href="/contact" className="hover:text-amber-500" >Contact</Link>
               </div>
               <div className="flex gap-4 self-stretch my-auto" aria-label="Social media links">

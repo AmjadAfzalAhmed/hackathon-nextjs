@@ -39,10 +39,10 @@ function Footer() {
             </form>
           </div>
         </div>
-        <div className="line mt-10 max-w-[1169px] aspect-[500] stroke-[1px] border-amber-500 border"></div>
+        <div className="line mt-10 w-[1169px] aspect-[500] stroke-[1px] border-amber-500 border"></div>
 
 
-        <div className="flex gap-5 justify-between items-start mt-14 w-full text-white max-w-[1320px] h-[331px] max-md:mt-10 max-md:max-w-full">
+        <div className="flex gap-5 justify-between items-start mt-14 w-full text-white max-w-full h-[331px] max-md:mt-10 max-md:max-w-full">
 
           <div className="w-[395px] h-[261px] flex flex-col items-start">
             <h3 className="text-xl font-bold leading-snug">About Us.</h3>

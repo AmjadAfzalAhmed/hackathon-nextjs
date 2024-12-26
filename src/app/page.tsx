@@ -80,7 +80,7 @@ export default function Home() {
                 <ChevronDown className="object-contain shrink-0 my-auto w-4 h-4 aspect-square" />
               </div>
               <div className="flex gap-8">
-                <Link href="/shopetails" className="hover:text-amber-500 focus:outline-none focus:ring-2 focus:ring-amber-500">Shop</Link>
+                <Link href="/shop" className="hover:text-amber-500 focus:outline-none focus:ring-2 focus:ring-amber-500">Shop</Link>
                 <Link href="/signup" className="hover:text-amber-500 focus:outline-none focus:ring-2 focus:ring-amber-500">Contact</Link>
               </div>
             </div>

@@ -62,7 +62,7 @@ const page = () => {
 
           <div className='w-[133px] h-7 flex items-center absolute top-[274px] left-[897px]'>
             <Link href='/' className='text-white text-[20px] leading-7'>Home</Link>
-            <ChevronRight className='w-4 h-4 text-white' />
+            <ChevronRight className='w-5 h-5 text-white' />
             <Link href='menu' className='text-[#ff9f0d] text-[20px] font-normal leading-7'>Menu</Link>
           </div>
 
