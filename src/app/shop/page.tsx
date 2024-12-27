@@ -9,6 +9,9 @@ import card1 from '/public/images/imgs1.png'
 import card2 from '/public/images/chocolate.png'
 import card3 from '/public/images/imgs3.png'
 import icon from '/public/images/muffIco.png'
+import banner from '/public/images/Banner.png'
+import product from '/public/images/vector.png'
+import star2 from '/public/images/star2.png'
 import {
     Select,
     SelectContent,
@@ -18,6 +21,18 @@ import {
     SelectTrigger,
     SelectValue,
 } from "@/components/ui/select"
+import { Input } from '@/components/ui/input'
+import { Progress } from '@/components/ui/progress'
+import {
+    Pagination,
+    PaginationContent,
+    PaginationEllipsis,
+    PaginationItem,
+    PaginationLink,
+    PaginationNext,
+    PaginationPrevious,
+} from "@/components/ui/pagination"
+import Footer from '@/components/Footer'
 
 
 function OurShop() {
@@ -70,13 +85,16 @@ function OurShop() {
             {/* Header ends here */}
 
             {/* Mid Section */}
+
             <div className='w-[1320px] h-[1923px] flex flex-col gap-6 absolute top-[560px] left-[300px]'>
+
+                {/* Cards Section */}
                 <div className='flex gap-4'>
                     <div className="sort flex gap-7">
                         <div className="one w-[332px] h-[46px] flex items-center gap-4">
                             <p className='font-semibold text-xl'>Sort By:</p>
                             <Select>
-                                <SelectTrigger className="w-[236px] h-[46px]">
+                                <SelectTrigger className="w-[236px] h-[46px] rounded-none">
                                     <SelectValue placeholder="Newest" />
                                 </SelectTrigger>
                                 <SelectContent>
@@ -94,7 +112,7 @@ function OurShop() {
                         <div className="two w-[332px] h-[46px] flex items-center gap-4">
                             <p className='font-semibold text-xl'>Show:</p>
                             <Select>
-                                <SelectTrigger className="w-[236px] h-[46px]">
+                                <SelectTrigger className="w-[236px] h-[46px] rounded-none">
                                     <SelectValue placeholder="Default" />
                                 </SelectTrigger>
                                 <SelectContent>
@@ -251,6 +269,139 @@ function OurShop() {
 
                 </div>
 
+                <div className='w-[450px] h-[61px] relative top-12 left-[300px]'>
+                    <Pagination>
+                        <PaginationContent>
+                            <PaginationItem>
+                                <PaginationPrevious href="#" />
+                            </PaginationItem>
+                            <PaginationItem>
+                                <PaginationLink href="#" className='w-10 h-10 mr-2 text-amber-500 text-xl border'>1</PaginationLink>
+                                <PaginationLink href="#" className='bg-amber-500 text-white w-10 h-10 relative -top-1'>2</PaginationLink>
+                                <PaginationLink href="#" className='w-10 h-10 ml-2 text-amber-500 text-xl border'>3</PaginationLink>
+                            </PaginationItem>
+                            <PaginationItem>
+                                <PaginationEllipsis />
+                            </PaginationItem>
+                            <PaginationItem>
+                                <PaginationNext href="/shop/shopdetails" />
+                            </PaginationItem>
+                        </PaginationContent>
+                    </Pagination>
+
+                </div>
+
+            </div>
+
+            {/* Side Section */}
+
+            <div className="side w-[312px] h-[1489px] absolute top-[600px] left-[1318px] flex flex-col">
+                <Input placeholder='Search product' className='w-[248px] h-[46px] rounded-none' />
+                <div className="absolute top-0 left-[202px] flex items-center justify-center w-[46px] h-[46px] bg-amber-500">
+                    <Search className="text-white" />
+                </div>
+                <div className="category flex flex-col">
+                    <p className='font-bold mt-6'>Category</p>
+                    <div className='flex items-center gap-4 mt-2'>
+                        <Input type='checkbox' className='w-4 h-4' />
+                        <p>Sandwiches</p>
+                    </div>
+                    <div className='flex items-center gap-4 mt-2'>
+                        <Input type='checkbox' className='w-4 h-4' />
+                        <p>Burger</p>
+                    </div>
+                    <div className='flex items-center gap-4 mt-2'>
+                        <Input type='checkbox' className='w-4 h-4' />
+                        <p>Chicken Soup</p>
+                    </div>
+                    <div className='flex items-center gap-4 mt-2'>
+                        <Input type='checkbox' className='w-4 h-4' />
+                        <p>Drink</p>
+                    </div>
+                    <div className='flex items-center gap-4 mt-2'>
+                        <Input type='checkbox' className='w-4 h-4' />
+                        <p>Pizza</p>
+                    </div>
+                    <div className='flex items-center gap-4 mt-2'>
+                        <Input type='checkbox' className='w-4 h-4' />
+                        <p>Non Veg</p>
+                    </div>
+                    <div className='flex items-center gap-4 mt-2'>
+                        <Input type='checkbox' className='w-4 h-4' />
+                        <p>Uncategorized</p>
+                    </div>
+
+                </div>
+
+                <Image src={banner} alt='banner' width={248} height={286} className='mt-6' />
+
+                <div className='filter flex flex-col gap-2 mt-4 w-[248px] h-[87px]'>
+                    <p className='font-bold text-xl'>Filter by Price</p>
+                    <Progress value={20} className='w-64 text-amber-500' />
+                    <div className='flex justify-between'>
+                        <p className='text-gray-300 text-[14px]'>From $0 to $8000</p>
+                        <p className='text-gray-300 text-[14px]'>Filter</p>
+                    </div>
+                </div>
+
+                <div className="latest w-[252px] h-[368px] flex flex-col gap-3">
+                    <p className='font-bold text-xl mb-4'>Latest Products</p>
+                    <div className="prod1 w-[252px] h-[67px] flex">
+                        <Image src={product} alt='product1' width={72} height={65} />
+                        <div className='flex flex-col ml-2 gap-2'>
+                            <p>Pizza</p>
+                            <Image src={star2} alt="stars" />
+                            <p>$35.00</p>
+                        </div>
+                    </div>
+                    <div className="prod1 w-[252px] h-[67px] flex">
+                        <Image src={product} alt='product1' width={72} height={65} />
+                        <div className='flex flex-col ml-2 gap-2'>
+                            <p>Cupcake</p>
+                            <Image src={star2} alt="stars" />
+                            <p>$35.00</p>
+                        </div>
+                    </div>
+                    <div className="prod1 w-[252px] h-[67px] flex">
+                        <Image src={product} alt='product1' width={72} height={65} />
+                        <div className='flex flex-col ml-2 gap-2'>
+                            <p>Cookies</p>
+                            <Image src={star2} alt="stars" />
+                            <p>$35.00</p>
+                        </div>
+                    </div>
+                    <div className="prod1 w-[252px] h-[67px] flex">
+                        <Image src={product} alt='product1' width={72} height={65} />
+                        <div className='flex flex-col ml-2 gap-2'>
+                            <p>Burger</p>
+                            <Image src={star2} alt="stars" />
+                            <p>$35.00</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div className="prodTags w-[225px] h-[162px] mt-4">
+
+                    <p className='font-bold text-xl'>Product Tags</p>
+                    <div className="grid grid-cols-3 gap-3 text-left mt-4">
+                        <div className="text-gray-700 text-[14px] cursor-pointer hover:underline">Services</div>
+                        <div className="text-gray-700 text-[14px] cursor-pointer hover:underline">Our Menu</div>
+                        <div className="text-gray-700 text-[14px] cursor-pointer hover:underline">Pizza</div>
+                        <div className="text-gray-700 text-[14px] cursor-pointer hover:underline">Cupcake</div>
+                        <div className="text-amber-500 text-[14px] font-bold cursor-pointer hover:underline">Burger</div>
+                        <div className="text-gray-700 text-[14px] cursor-pointer hover:underline">Cookies</div>
+                        <div className="text-gray-700 text-[14px] cursor-pointer hover:underline">Our Shop</div>
+                        <div className="text-gray-700 text-[14px] cursor-pointer hover:underline">Tandoori Chicken</div>
+                    </div>
+
+                </div>
+            </div>
+
+            {/* Footer */}
+
+            <div className='absolute top-[2573px]'>
+                <Footer />
             </div>
 
         </div>

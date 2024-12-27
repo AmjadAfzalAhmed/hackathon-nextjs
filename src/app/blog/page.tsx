@@ -30,7 +30,15 @@ import photo4 from '/public/images/photo4.png'
 import photo5 from '/public/images/photo5.png'
 import photo6 from '/public/images/photo6.png'
 import { Input } from '@/components/ui/input'
-import { FaAnglesRight } from "react-icons/fa6";
+import {
+    Pagination,
+    PaginationContent,
+    PaginationEllipsis,
+    PaginationItem,
+    PaginationLink,
+    PaginationNext,
+    PaginationPrevious,
+} from "@/components/ui/pagination"
 
 function Blog() {
     return (
@@ -297,53 +305,27 @@ function Blog() {
             </div>
 
             {/* Navigator */}
-            <div className="max-w-[306px] min-h-[51px] flex gap-3.5 items-start absolute top-[4074px] left-[300px]">
-                <div
-                    className="flex flex-col items-center bg-white border border-solid border-zinc-100 h-[50px] stroke-zinc-100 w-[50px]"
-                    aria-label="Step 1"
-                >
-                    <FaAnglesRight />
-                    <div
-                        className="flex shrink-0 border-2 border-solid border-zinc-100 h-[50px] stroke-zinc-100"
-                    ></div>
-                </div>
-                <div
-                    className="flex flex-col items-center text-base text-amber-500 whitespace-nowrap bg-white border border-solid border-zinc-100 h-[50px] stroke-zinc-100 w-[50px]"
-                    aria-label="Step 2"
-                >
-                    <div
-                        className="px-1.5 py-3.5 border-2 border-solid border-zinc-100 stroke-zinc-100"
-                    >
-                        1
-                    </div>
-                </div>
-                <div
-                    className="px-5 text-base text-white whitespace-nowrap bg-amber-500 border border-solid border-zinc-100 fill-amber-500 h-[50px] stroke-zinc-100 w-[50px]"
-                    aria-label="Step 3 (Current)"
-                >
-                    2
-                </div>
-                <div
-                    className="flex flex-col items-center text-base text-amber-500 whitespace-nowrap bg-white border border-solid border-zinc-100 h-[50px] stroke-zinc-100 w-[50px]"
-                    aria-label="Step 4"
-                >
-                    <div
-                        className="px-1.5 py-3.5 border-2 border-solid border-zinc-100 stroke-zinc-100"
-                    >
-                        3
-                    </div>
-                </div>
-                <div
-                    className="flex flex-col items-center text-base font-black text-amber-500 whitespace-nowrap bg-white border border-solid border-zinc-100 h-[50px] stroke-zinc-100 w-[50px]"
-                    aria-label="Step 5"
-                >
-                    <div
-                        className="px-1.5 py-4 border-2 border-solid border-zinc-100 stroke-zinc-100"
-                    >
+            <div className='w-[450px] h-[61px] absolute top-[4074px] left-[583px]'>
+                    <Pagination>
+                        <PaginationContent>
+                            <PaginationItem>
+                                <PaginationPrevious href="#" />
+                            </PaginationItem>
+                            <PaginationItem>
+                                <PaginationLink href="#" className='w-10 h-10 mr-2 text-amber-500 text-xl border'>1</PaginationLink>
+                                <PaginationLink href="#" className='bg-amber-500 text-white w-10 h-10 relative -top-1'>2</PaginationLink>
+                                <PaginationLink href="#" className='w-10 h-10 ml-2 text-amber-500 text-xl border'>3</PaginationLink>
+                            </PaginationItem>
+                            <PaginationItem>
+                                <PaginationEllipsis />
+                            </PaginationItem>
+                            <PaginationItem>
+                                <PaginationNext href="/blog/blogdetails" />
+                            </PaginationItem>
+                        </PaginationContent>
+                    </Pagination>
 
-                    </div>
                 </div>
-            </div>
 
             {/* Sidebar */}
             <div className="flex flex-col mx-auto w-full max-w-[424px] min-h-[2501px] absolute top-[530px] left-[1196px]">
